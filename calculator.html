@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!-- <style type="text/css">
+		.btn{
+			 	padding: 5px 50px;
+  				text-align: center;
+  				text-decoration: none;
+  				display: inline-block;
+  				font-size: 16px;
+  				margin: 10px 20px;
+		}
+
+
+	</style> -->
+</head>
+<body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+	 $(document).ready(function(){    
+            $("#btnAdd").click(function(){    
+                Add();    
+            });    
+            $("#btnMinus").click(function(){    
+                Minus();    
+            })    
+            $("#btnMultiply").click(function(){    
+                Multiply();    
+            })    
+            $("#btnDivide").click(function(){    
+                Divide();    
+            })    
+
+        });    
+        function Add(){    
+         var num1=parseInt($("#txt1").val());    
+         var num2=parseInt($("#txt2").val());    
+         var result =num1+num2;    
+         $('#show').text(result);
+        }    
+
+        function Minus(){    
+         var num1=parseInt($("#txt1").val());    
+         var num2=parseInt($("#txt2").val());    
+         var result =num1-num2;    
+         $('#show').text(result);  
+        }   
+
+        function Multiply(){    
+         var num1=parseInt($("#txt1").val());    
+         var num2=parseInt($("#txt2").val());    
+         var result =num1*num2;    
+           $('#show').text(result); 
+        }    
+
+        function Divide(){    
+         var num1=parseInt($("#txt1").val());    
+         var num2=parseInt($("#txt2").val());    
+         var result =num1/num2;    
+         $('#show').text(result);
+        }    
+     
+</script>
+
+			<!-- Jumbotron -->
+ <div class="jumbotron">
+	<h1>Calculator</h1>
+</div>   
+<form class="mx-5 px-5">
+  <div class="form-group row">
+    <label for="fname" class="col-sm-2 col-form-label">First Number</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" id="txt1" placeholder="Enter a number">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="sname" class="col-sm-2 col-form-label">Second Number</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" id="txt2" placeholder="Enter a number">
+    </div>
+  </div>
+</form>
+	<div class=" row my-5 px-5" >
+		<div class="col-sm-2 ml-5">			
+			<button class="btn btn-outline-primary btn-block" id="btnAdd">+</button>
+		</div>
+		<div class="col-sm-2 ml-5">			
+			<button class="btn btn-outline-primary btn-block" id="btnMinus">-</button>
+		</div>
+		<div class="col-sm-2 ml-5">			
+			<button class="btn btn-outline-primary btn-block" id="btnMultiply">*</button>
+		</div>
+						
+		<div class="col-sm-2 ml-5">
+            <button class="btn btn-outline-primary btn-block" id="btnDivide">/</button>
+		</div> 
+	</div>
+
+	<div class=" row my-5 ml-5 px-5">
+		<h3><strong>Result is: </strong>
+			<span class="text-danger" id="show"></span>
+		</h3>
+	</div>
+</body>
+</html>
