@@ -1,0 +1,64 @@
+ .nav-pills li .active {
+			background-color: #f51b47 !important;
+			color: #ffffff !important;
+		}
+
+.nav-link {
+			color: #f51b47;
+		}
+
+.top-left {
+  position: absolute;
+  background-color: #000;
+  color: #ffffff;
+  width: 70px;
+  text-align: center;
+  border-radius: 10px;
+  top: 8px;
+  left: 16px;
+}
+
+.qty .count {
+    color: #000;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    padding: 0 2px;
+    width: 35px;
+    text-align: center;
+}
+.qty .plus {
+    display: inline-block;
+    vertical-align: top;
+    width: 30px;
+    height: 30px;
+    font: 30px;
+    text-align: center;
+    border-radius: 50%;
+    }
+.qty .minus {
+    display: inline-block;
+    vertical-align: top;
+    width: 30px;
+    height: 30px;
+    font: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+div .qty{
+    text-align: center;
+}
+
+/*to prevent text selection*/
+span{
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;    /* IE 10+ */
+}
+input{  
+    border: 0;
+    width: 2%;
+}
+
+       

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SuMo SuShi</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">	
+	<!--For icon -->				
+	<link rel="icon" type="image/png" href="images/sushi1.png" sizes="16x16">
+	<link rel="stylesheet" type="text/css" href="style.css">	
+</head>
+<body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+
+   			$('.plus').click(function(){	
+				$('.count').val(parseInt($('.count').val()) + 1 );
+
+    		}); 
+        		$('.minus').click(function(){
+    			$('.count').val(parseInt($('.count').val()) - 1 );
+
+    	    	});
+ 		});
+</script>
+
+<div class="container-fluid bg-danger py-2">
+	<div class="row offset-2">
+		<div class="col-sm-2 " >
+			<img src="images/sushi1.png" class="img-fluid  pb-4 px-3" >
+		</div>
+ 		<div class="col-sm-10 text-white pt-5" >
+ 			<h1>相撲寿司</h1>
+ 			<p>メニューリスト</p>
+ 		</div>	
+	</div>	
+</div>
+
+<div class="container my-5">
+	<div class="row">
+		<div class="col-7 bg-white shadow">
+			<ul class="nav nav-pills mb-2 mt-2" id="pills-tab" role="tablist">
+  				<li class="nav-item  pl-3">
+    			<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Sushi</a>
+ 				 </li>
+  				<li class="nav-item  pl-3">
+   					 <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Bento Boxs</a>
+  				</li>
+  				<li class="nav-item  pl-3">
+   					 <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Ramen</a>
+  				</li>
+  				<li class="nav-item  pl-3">
+   					 <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Appetizears</a>
+  				</li>
+  				<li class="nav-item  pl-3">
+   					 <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Rice</a>
+  				</li>
+			</ul>
+				<div class="row px-2">
+					<div class="col-md-4 py-3">
+						<div class="card">
+							<div class="card_img">
+								<div class="top-left">2350 Ks</div>
+								<img src="images/sushi3.jpeg " class="card-img-top border image">
+								<div class="view-detail" data-target="#item-detail"
+								 data-toggle="modal">
+									<span class="fa-stack fa-lg">
+			  						<i class="fas fa-circle fa-stack-2x"></i>
+			  						<i class="fas fa-eye fa-stack-1x fa-inverse">
+			  						</i>
+									</span>
+								</div>
+							</div>
+							<div class="card-body text-center">
+								<p>WASAKA Sushi</p>
+								<hr class="item-divider">
+								<button class="btn btn-outline-danger btn-block">
+									Add To Cart
+								</button>
+							</div>
+						</div>
+					</div>	
+					<div class="col-md-4  py-3">
+						<div class="card">
+							<div class="card_img">
+								<div class="top-left">3850 Ks</div>
+								<img src="images/sushi4.jpeg " class="card-img-top border image">
+								<div class="view-detail" data-target="#item-detail"
+								 data-toggle="modal">
+									<span class="fa-stack fa-lg">
+			  						<i class="fas fa-circle fa-stack-2x"></i>
+			  						<i class="fas fa-eye fa-stack-1x fa-inverse">
+			  						</i>
+									</span>
+								</div>
+							</div>
+							<div class="card-body text-center">
+								<p>Salmon Sushi</p>
+								<hr class="item-divider">
+								<button class="btn btn-outline-danger btn-block">
+									Add To Cart
+								</button>
+							</div>
+						</div>
+					</div>	
+					<div class="col-md-4  py-3">
+						<div class="card">
+							<div class="card_img">
+								<div class="top-left">1350 Ks</div>
+								<img src="images/sushi5.jpeg " class="card-img-top border image">
+								<div class="view-detail" data-target="#item-detail"
+								 data-toggle="modal">
+									<span class="fa-stack fa-lg">
+			  						<i class="fas fa-circle fa-stack-2x"></i>
+			  						<i class="fas fa-eye fa-stack-1x fa-inverse">
+			  						</i>
+									</span>
+								</div>
+							</div>
+							<div class="card-body text-center">
+								<p>Salmon Sushi</p>
+								<hr class="item-divider">
+								<button class="btn btn-outline-danger btn-block">
+									Add To Cart
+								</button>
+							</div>
+						</div>
+					</div>	
+				</div>
+				<div class="row px-2">
+					<div class="col-md-4  py-3">
+						<div class="card">
+							<div class="card_img">
+								<div class="top-left">3350 Ks</div>
+								<img src="images/sushi6.jpeg " class="card-img-top border image">
+								<div class="view-detail" data-target="#item-detail"
+								 data-toggle="modal">
+									<span class="fa-stack fa-lg">
+			  						<i class="fas fa-circle fa-stack-2x"></i>
+			  						<i class="fas fa-eye fa-stack-1x fa-inverse">
+			  						</i>
+									</span>
+								</div>
+							</div>
+							<div class="card-body text-center">
+								<p>Cheese Sushi</p>
+								<hr class="item-divider">
+								<button class="btn btn-outline-danger btn-block">
+									Add To Cart
+								</button>
+							</div>
+						</div>
+					</div>	
+					<div class="col-md-4 py-3">
+						<div class="card">
+							<div class="card_img">
+								<div class="top-left">5500 Ks</div>
+								<img src="images/sushi7.jpeg " class="card-img-top border image">
+								<div class="view-detail" data-target="#item-detail"
+								 data-toggle="modal">
+									<span class="fa-stack fa-lg">
+			  						<i class="fas fa-circle fa-stack-2x"></i>
+			  						<i class="fas fa-eye fa-stack-1x fa-inverse">
+			  						</i>
+									</span>
+								</div>
+							</div>
+							<div class="card-body text-center">
+								<p>Wasabi Sushi</p>
+								<hr class="item-divider">
+								<button class="btn btn-outline-danger btn-block">
+									Add To Cart
+								</button>
+							</div>
+						</div>
+					</div>	
+					<div class="col-md-4 py-3">
+						<div class="card">
+							<div class="card_img">
+								<div class="top-left">7000 Ks</div>
+								<img src="images/sushi8.jpeg " class="card-img-top border image">
+								<div class="view-detail" data-target="#item-detail"
+								 data-toggle="modal">
+									<span class="fa-stack fa-lg">
+			  						<i class="fas fa-circle fa-stack-2x"></i>
+			  						<i class="fas fa-eye fa-stack-1x fa-inverse">
+			  						</i>
+									</span>
+								</div>
+							</div>
+							<div class="card-body text-center">
+								<p>Bamboo Sushi</p>
+								<hr class="item-divider">
+								<button class="btn btn-outline-danger btn-block">
+									Add To Cart
+								</button>
+							</div>
+						</div>
+					</div>	
+				</div>		
+		</div>
+	
+	<div class="col-5">
+		<form>
+			<div class="table-responsive bg-white shadow">	
+				<table class="table table-bordered ">
+					<thead><h4 class="text-center pt-2">Payment</h4>
+						<tr class="thead-light">
+							<th>Name</th>
+							<th>Qty</th>
+							<th>Price</th>
+							<th>Remove</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Salmon Sushi<br><i class="text-muted font-weight-light">1600 Ks</i></td>
+							<td>
+								<div class="qty mt-5">
+									<span class="plus bg-light">+</span>
+                       				 <input type="text" class="count" name="qty" value="1" >
+                        			 <span class="minus bg-light">-</span>
+                    			</div>
+							</td>
+							<td>1600</td>
+							<td>
+							<button type="button" class="btn btn-danger btn-sm">&times;</button>
+							</td>
+						</tr>
+						<tr>
+							<td>Grand Total</td>
+							<td colspan="3">1600 Ks</td>
+						</tr>
+						<tr>
+							<td>Paid</td>
+							<td colspan="3">
+								<input type="number"  name="paid" class="form-control" min="0" placeholder="Paid Money" >
+							</td>
+						</tr>
+						<tr>
+							<td>Charges</td>
+							<td colspan="3">
+							<input type="number"  name="charges" class="form-control" placeholder="Charges Money" readonly>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4">
+						       <button class="btn btn-light btn-block">Check Out</button>
+					        </td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</form>
+	</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
